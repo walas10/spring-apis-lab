@@ -1,13 +1,13 @@
-package com.laboratorio_v.spring_apis;
+package com.lab.apis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringApisApplication {
+public class ApisApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringApisApplication.class, args);
+		SpringApplication.run(ApisApplication.class, args);
 	}
 
 }

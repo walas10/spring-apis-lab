@@ -1,10 +1,10 @@
-package com.laboratorio_v.spring_apis;
+package com.lab.apis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringApisApplicationTests {
+class ApisApplicationTests {
 
 	@Test
 	void contextLoads() {
