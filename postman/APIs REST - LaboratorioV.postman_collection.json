@@ -768,6 +768,180 @@
           "response": []
         }
       ]
+    },
+    {
+      "name": "06 Cursos",
+      "item": [
+        {
+          "name": "GET Todos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/cursos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "cursos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/cursos/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST Crear Curso",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Programacion II\",\r\n  \"descripcion\": \"Desarrollo de aplicaciones con Java y Spring\",\r\n  \"creditos\": 5,\r\n  \"modalidad\": \"Presencial\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/cursos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "cursos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT Actualizar Curso",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nombre\": \"Programacion II Avanzada\",\r\n  \"descripcion\": \"Desarrollo de APIs REST con Java y Spring Boot\",\r\n  \"creditos\": 6,\r\n  \"modalidad\": \"Presencial\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/cursos/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PATCH Actualizar Parcial",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"modalidad\": \"Virtual\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/cursos/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "cursos",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE Eliminar Curso",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/cursos/6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "cursos",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
     }
   ]
 }
